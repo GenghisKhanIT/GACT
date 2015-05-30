@@ -4,8 +4,8 @@
 <widget xmlns     = "http://luca.it/GACT"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "net.luca.GayttingAroundCataniaGIT"
-		version   = "0.0.7"
-		versionCode="7">
+		version   = "0.0.8"
+		versionCode="8">
 
     <name>
 		Gaytting Around Catania GIT

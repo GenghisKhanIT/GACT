@@ -4,7 +4,6 @@
 <title>Gaytting Around Catania - Eat</title>
 <link rel="stylesheet" href="res/css/GALightBlue.css">
 <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-<script src="res/js/GACT.js" type="text/javascript"></script>
 <script type="text/javascript">
 // Wait for device API libraries to load
 //
@@ -16,18 +15,45 @@ function onDeviceReady() {
 	// Empty
 }
 
+function onConfirm (buttonIndex) {
+	var l= buttonIndex
+	if (l == 1) {
+		if(navigator.app){
+			navigator.app.exitApp();
+		}	
+		else 
+			if(navigator.device){
+				navigator.device.exitApp();
+			}
+		} 
+}
+
+function showConfirm() {
+	navigator.notification.confirm(
+		'Quit ?', 				// message
+		 onConfirm,            	// callback to invoke with index of button pressed
+		'Confirm',           	// title
+		['Ok','Cancel']      // buttonLabels
+	);
+}
+
 </script>
 </head>
 
 <body>
+<header>
+<h1>
+Gaytting Around in Catania
+</h1>
+</header>
 
 <nav>
 <ul id="mynav" style="list-style-type:none">
-	<li class="unselectedNavItem"><a target="GACTFrame" href="GAMain.htm">Main</a></li>
-	<li class="unselectedNavItem"><a target="GACTFrame" href="GASleep.htm">Sleep</a></li>
+	<li class="unselectedNavItem"><a href="GAMain.htm">Main</a></li>
+	<li class="unselectedNavItem"><a href="GASleep.htm">Sleep</a></li>
 	<li class="selectedNavItem">Eat</li>
-	<li class="unselectedNavItem"><a target="GACTFrame" href="GASnack.htm">Snack</a></li>
-	<li class="unselectedNavItem"><a target="GACTFrame" href="GAMeet.htm">Meet</a></li>
+	<li class="unselectedNavItem"><a href="GASnack.htm">Snack</a></li>
+	<li class="unselectedNavItem"><a href="GAMeet.htm">Meet</a></li>
 	<li class="unselectedNavItem"><a href="#" onclick="showConfirm(); return false;">Quit</a></li>
 </ul>
 </nav>
@@ -38,5 +64,8 @@ function onDeviceReady() {
 </p>
 </section>
 
+<footer>
+v0.0.8 By Luca
+</footer>
 </body>
 </html>
