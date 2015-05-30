@@ -7,9 +7,7 @@
         id        = "net.luca.GayttingAroundCatania"
         version   = "0.0.7">
 
-    <title>GayttingAroundCatania</title>
-	
-	<name>Gaytting Around in Catania</name>
+	<name>Gaytting Around Catania</name>
 
     <description>
         A short guide to Catania city.
