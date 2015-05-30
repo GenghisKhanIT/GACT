@@ -5,9 +5,9 @@
         xmlns     = "http://luca.it/example"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "net.luca.GayttingAroundCatania"
-        version   = "0.0.7">
+        version   = "0.0.06b">
 
-	<name>Gaytting Around Catania</name>
+    <name>Gaytting Around in Catania</name>
 
     <description>
         A short guide to Catania city.
