@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 
-<widget xmlns     = "http://luca.it/example"
+<widget xmlns     = "http://luca.it/GACT"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "net.luca.GayttingAroundCataniaGIT"
-		version   = "0.0.06b"
-		versionCode="6">
+		version   = "0.0.7"
+		versionCode="7">
 
     <name>
 		Gaytting Around Catania GIT
