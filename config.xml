@@ -5,11 +5,11 @@
         xmlns     = "http://luca.it/example"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "net.luca.GayttingAroundCatania"
-        version   = "0.0.06b">
+		version   = "0.0.06b">
 
     <name>Gaytting Around in Catania</name>
-
-    <description>
+	
+	<description>
         A short guide to Catania city.
     </description>
 
@@ -17,6 +17,9 @@
         Luca
     </author>
 
+	<gap:platform name="android" />
+	<!-- <gap:platform name="ios" />
+	<gap:platform name="winphone" />    -->
 
     <!--
         If you do not want any permissions to be added to your app, add the
