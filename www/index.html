@@ -16,28 +16,6 @@ function onDeviceReady() {
 	// Empty
 }
 
-function onConfirm (buttonIndex) {
-	var l= buttonIndex
-	if (l == 1) {
-		if(navigator.app){
-			navigator.app.exitApp();
-		}	
-		else 
-			if(navigator.device){
-				navigator.device.exitApp();
-			}
-		} 
-}
-
-function showConfirm() {
-	navigator.notification.confirm(
-		'Quit ?', 				// message
-		 onConfirm,            	// callback to invoke with index of button pressed
-		'Confirm',           	// title
-		['Ok','Cancel']      // buttonLabels
-	);
-}
-
 </script>
 </head>
 
@@ -51,7 +29,6 @@ Gaytting Around in Catania
 <section>
 <iframe name="GACTFrame" src="GAMain.htm" width="100%" height="400px" style ="border:none">
 </iframe>
-
 </section>
 
 <footer>
