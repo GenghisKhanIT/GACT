@@ -1,5 +1,3 @@
-<script type="text/javascript">
-
 function onConfirm (buttonIndex) {
 	var l= buttonIndex
 	if (l == 1) {
@@ -21,5 +19,3 @@ function showConfirm() {
 		['Ok','Cancel']      // buttonLabels
 	);
 }
-
-</script>
