@@ -3,7 +3,7 @@
 
 <widget xmlns     = "http://luca.it/example"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "net.luca.GayttingAroundCatania"
+        id        = "net.luca.GayttingAroundCataniaGIT"
 		version   = "0.0.06b"
 		versionCode="6">
 
